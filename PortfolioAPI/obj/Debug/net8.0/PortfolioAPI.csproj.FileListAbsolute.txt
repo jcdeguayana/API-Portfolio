@@ -62,3 +62,4 @@ C:\Users\Usuario\Desktop\PortfolioAPI\PortfolioAPI\obj\Debug\net8.0\refint\Portf
 C:\Users\Usuario\Desktop\PortfolioAPI\PortfolioAPI\obj\Debug\net8.0\PortfolioAPI.pdb
 C:\Users\Usuario\Desktop\PortfolioAPI\PortfolioAPI\obj\Debug\net8.0\PortfolioAPI.genruntimeconfig.cache
 C:\Users\Usuario\Desktop\PortfolioAPI\PortfolioAPI\obj\Debug\net8.0\ref\PortfolioAPI.dll
+C:\Users\Usuario\Desktop\PortfolioAPI\PortfolioAPI\obj\Debug\net8.0\PortfolioAPI.sourcelink.json

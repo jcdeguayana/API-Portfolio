@@ -46,8 +46,7 @@
               "RelativeToolTip": "PortfolioAPI\\Repositories\\ExperienceRepository.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAQwB0AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T17:35:20.677Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-27T17:35:20.677Z"
             },
             {
               "$type": "Document",
@@ -59,21 +58,19 @@
               "RelativeToolTip": "PortfolioAPI\\Entities\\Experience.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T17:26:14.713Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-27T17:26:14.713Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "PortfolioAPI",
+              "Title": "PortfolioAPI.csproj",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PortfolioAPI\\PortfolioAPI\\PortfolioAPI.csproj",
               "RelativeDocumentMoniker": "PortfolioAPI\\PortfolioAPI.csproj",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\PortfolioAPI\\PortfolioAPI\\PortfolioAPI.csproj",
               "RelativeToolTip": "PortfolioAPI\\PortfolioAPI.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-27T16:52:45.565Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-27T16:52:45.565Z"
             },
             {
               "$type": "Document",
@@ -85,8 +82,7 @@
               "RelativeToolTip": "PortfolioAPI\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-27T17:03:04.248Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-27T17:03:04.248Z"
             },
             {
               "$type": "Document",
@@ -98,8 +94,7 @@
               "RelativeToolTip": "PortfolioAPI\\Properties\\launchSettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-27T17:02:12.467Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-27T17:02:12.467Z"
             },
             {
               "$type": "Document",
@@ -109,7 +104,7 @@
               "RelativeDocumentMoniker": "PortfolioAPI\\Controllers\\ExperienceController.cs",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\PortfolioAPI\\PortfolioAPI\\Controllers\\ExperienceController.cs",
               "RelativeToolTip": "PortfolioAPI\\Controllers\\ExperienceController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAjAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-27T16:53:20.332Z",
               "EditorCaption": ""
