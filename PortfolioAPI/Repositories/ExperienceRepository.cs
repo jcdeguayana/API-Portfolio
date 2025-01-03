@@ -2,10 +2,14 @@
 using PortfolioAPI.Entities;
 namespace PortfolioAPI.Repositories
 {
-    public static class ExperienceRepository
+    public class ExperienceRepository
     {
+        public ExperienceRepository()
+        {
+            Console.WriteLine("Me instanciaron");
+        }
         /*Al ser la clase estática no se pierden en memoria los datos*/
-        public static List<Experience> Experiences { get; set; } = new List<Experience>()
+        public List<Experience> Experiences { get; set; } = new List<Experience>()
         {
             new Experience()
                {

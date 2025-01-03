@@ -12,6 +12,13 @@ namespace PortfolioAPI.Controllers
     [ApiController]
     public class ExperienceController : ControllerBase
     {
+        /*1- Propiedad privada y de solo lectura del tipo de la clase que quiero inyectar*/
+        private readonly ExperienceRepository _experienceRepository;
+        /*2- */
+        public ExperienceController(ExperienceRepository experienceRepository)
+        {
+            _experienceRepository = experienceRepository;
+        }
         [HttpGet] /*Solicitamos todo*/
         public IActionResult Get([FromQuery] bool IncludeDeleted = false)
         {
@@ -19,11 +26,11 @@ namespace PortfolioAPI.Controllers
             List<Experience> experiences = experienceRepository.Experiences;*/
             if (IncludeDeleted)
             {
-                return Ok(ExperienceRepository.Experiences);
+                return Ok(_experienceRepository.Experiences);
             }
             else
             {
-                return Ok(ExperienceRepository.Experiences.Where(e=>e.State=="Active"));
+                return Ok(_experienceRepository.Experiences.Where(e=>e.State=="Active"));
             }
         }
 
@@ -32,7 +39,7 @@ namespace PortfolioAPI.Controllers
         {
             /*ExperienceRepository experienceRepository = new ExperienceRepository();
             List<Experience> experiences = experienceRepository.Experiences;*/
-            return Ok(ExperienceRepository.Experiences.Where(e=>e.Title.Contains(title)));
+            return Ok(_experienceRepository.Experiences.Where(e=>e.Title.Contains(title)));
         }
 
         [HttpPost] /*Hacemos el recurso recibiendo por el body la nueva experiencia*/
@@ -42,20 +49,20 @@ namespace PortfolioAPI.Controllers
             List<Experience> experiences = experienceRepository.Experiences;*/
             Experience experience = new Experience()
             {
-                Id = ExperienceRepository.Experiences.Count()+1,
+                Id = _experienceRepository.Experiences.Count()+1,
                 Title = RequestDto.Title,
                 Descripcion = RequestDto.Descripcion,
                 ImagePath = RequestDto.ImagePath,
                 Summary = "In processings"
             };
-            ExperienceRepository.Experiences.Add(experience);
-            return Ok(ExperienceRepository.Experiences);
+            _experienceRepository.Experiences.Add(experience);
+            return Ok(_experienceRepository.Experiences);
         }
 
         [HttpPut("{Idexperience}")]
         public IActionResult UpdateExperience([FromRoute]int Idexperience,[FromBody] ExperienceForCreationAndUpdateRequest Request)
         {
-            int ExperienceToModify = ExperienceRepository.Experiences.FindIndex(e => e.Id == Idexperience);
+            int ExperienceToModify = _experienceRepository.Experiences.FindIndex(e => e.Id == Idexperience);
             if (ExperienceToModify != 1)
             {
                 Experience NewExperience = new Experience()
@@ -64,9 +71,9 @@ namespace PortfolioAPI.Controllers
                     Title = Request.Title,
                     Descripcion = Request.Descripcion,
                     ImagePath = Request.ImagePath,
-                    Summary = ExperienceRepository.Experiences[ExperienceToModify].Summary
+                    Summary = _experienceRepository.Experiences[ExperienceToModify].Summary
                 };
-                ExperienceRepository.Experiences[ExperienceToModify] = NewExperience;
+                _experienceRepository.Experiences[ExperienceToModify] = NewExperience;
                 return NoContent();
             }
             else
@@ -88,19 +95,19 @@ namespace PortfolioAPI.Controllers
 
         public IActionResult DeleteLogic([FromRoute] int IdExperience)
         {
-            int ExperienceToDelete = ExperienceRepository.Experiences.FindIndex(e => e.Id == IdExperience);
+            int ExperienceToDelete = _experienceRepository.Experiences.FindIndex(e => e.Id == IdExperience);
             if (ExperienceToDelete != 1)
             {
                 Experience DeletedExperience = new Experience()
                 {
                     Id = IdExperience,
-                    Title = ExperienceRepository.Experiences[ExperienceToDelete].Title,
-                    Descripcion = ExperienceRepository.Experiences[ExperienceToDelete].Descripcion,
-                    ImagePath = ExperienceRepository.Experiences[ExperienceToDelete].ImagePath,
-                    Summary = ExperienceRepository.Experiences[ExperienceToDelete].Summary,
+                    Title = _experienceRepository.Experiences[ExperienceToDelete].Title,
+                    Descripcion = _experienceRepository.Experiences[ExperienceToDelete].Descripcion,
+                    ImagePath = _experienceRepository.Experiences[ExperienceToDelete].ImagePath,
+                    Summary = _experienceRepository.Experiences[ExperienceToDelete].Summary,
                     State = "Deleted"
                 };
-                ExperienceRepository.Experiences[ExperienceToDelete] = DeletedExperience;
+                _experienceRepository.Experiences[ExperienceToDelete] = DeletedExperience;
                 return NoContent();
             }
             return Ok();
