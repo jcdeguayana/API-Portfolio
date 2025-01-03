@@ -9,6 +9,7 @@ namespace PortfolioAPI.Repositories
         {
             new Experience()
                {
+                  Id = 1,
                   Title = "Programador Junior",
                   Descripcion = "Primera experiencia laboral",
                   ImagePath = "Ruta",
@@ -16,6 +17,7 @@ namespace PortfolioAPI.Repositories
                },
                new Experience()
                {
+                  Id = 2,
                   Title = "Programador Senior",
                   Descripcion = "Mucha experiencia laboral",
                   ImagePath = "Ruta",
@@ -23,6 +25,7 @@ namespace PortfolioAPI.Repositories
                },
                new Experience()
                {
+                  Id = 3,
                   Title = "Programador Backend C#",
                   Descripcion = "Primera experiencia laboral",
                   ImagePath = "Ruta",
