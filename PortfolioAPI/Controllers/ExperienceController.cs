@@ -52,7 +52,7 @@ namespace PortfolioAPI.Controllers
             {
                 Title = RequestDto.Title,
                 Descripcion = RequestDto.Descripcion,
-                ImagePath = RequestDto.ImagePath,
+                ImgPath = RequestDto.ImagePath,
                 Summary = "In processings"
             };
             return Ok(_experienceRepository.Add(experience));

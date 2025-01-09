@@ -11,7 +11,7 @@ namespace PortfolioAPI.Entities
         public string Title { get; set; }
         public string Descripcion { get; set; }
         public string Summary { get; set; }
-        public string ImagePath { get; set; }
+        public string ImgPath { get; set; }
         public string State { get; set; } = "Active";
     }
 }
