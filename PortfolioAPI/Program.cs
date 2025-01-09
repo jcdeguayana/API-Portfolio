@@ -1,4 +1,6 @@
-using PortfolioAPI.Repositories;
+using Microsoft.EntityFrameworkCore;
+using PortfolioAPI.Data;
+using PortfolioAPI.Data.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,8 +11,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlite(
+builder.Configuration["ConnectionStrings:DBConnectionString"]));
+/*Se puede poner la ruta directamente*/
 /*Ciclo de vida del servicio*/
-builder.Services.AddScoped<ExperienceRepository>();
+builder.Services.AddTransient<ExperienceRepository>();
 
 var app = builder.Build();
 

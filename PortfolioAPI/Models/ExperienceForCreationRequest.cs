@@ -12,7 +12,6 @@ namespace PortfolioAPI.Models
         public string Descripcion { get; set; }
 
         [Required]
-        [Url]
         public string ImagePath { get; set; }
     }
 }
