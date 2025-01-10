@@ -22,32 +22,21 @@ namespace PortfolioAPI.Controllers
         [HttpGet] /*Solicitamos todo*/
         public IActionResult Get([FromQuery] bool IncludeDeleted = false)
         {
-            /*ExperienceRepository experienceRepository = new ExperienceRepository();
-            List<Experience> experiences = experienceRepository.Experiences;*/
-            //if (IncludeDeleted)
-            //{
-            //    return Ok(_experienceRepository.Experiences);
-            //}
-            //else
-            //{
-            //    return Ok(_experienceRepository.Experiences.Where(e=>e.State=="Active"));
-            //}
-            return Ok(_experienceRepository.Get());
+            if (IncludeDeleted)
+                return Ok(_experienceRepository.GetAll());
+            else
+                return Ok(_experienceRepository.Get());
         }
 
-        //[HttpGet("{title}")] /*Solicitamos la experiencia ingresada por parametro*/
-        //public IActionResult GetOne(string title)
-        //{
-        //    /*ExperienceRepository experienceRepository = new ExperienceRepository();
-        //    List<Experience> experiences = experienceRepository.Experiences;*/
-        //    return Ok(_experienceRepository.Experiences.Where(e=>e.Title.Contains(title)));
-        //}
+        [HttpGet("{title}")] /*Solicitamos la experiencia ingresada por parametro*/
+        public IActionResult GetOne(string title)
+        {
+            return Ok(_experienceRepository.GetOne(title));
+        }
 
         [HttpPost] /*Hacemos el recurso recibiendo por el body la nueva experiencia*/
         public IActionResult AddExperience([FromBody]ExperienceForCreationAndUpdateRequest RequestDto)
         {
-            /*ExperienceRepository experienceRepository = new ExperienceRepository();
-            List<Experience> experiences = experienceRepository.Experiences;*/
             Experience experience = new Experience()
             {
                 Title = RequestDto.Title,
@@ -59,58 +48,48 @@ namespace PortfolioAPI.Controllers
         }
 
 
-        //[HttpPut("{Idexperience}")]
-        //public IActionResult UpdateExperience([FromRoute]int Idexperience,[FromBody] ExperienceForCreationAndUpdateRequest Request)
-        //{
-        //    int ExperienceToModify = _experienceRepository.Experiences.FindIndex(e => e.Id == Idexperience);
-        //    if (ExperienceToModify != 1)
-        //    {
-        //        Experience NewExperience = new Experience()
-        //        {
-        //            Id = Idexperience,
-        //            Title = Request.Title,
-        //            Descripcion = Request.Descripcion,
-        //            ImagePath = Request.ImagePath,
-        //            Summary = _experienceRepository.Experiences[ExperienceToModify].Summary
-        //        };
-        //        _experienceRepository.Experiences[ExperienceToModify] = NewExperience;
-        //        return NoContent();
-        //    }
-        //    else
-        //    {
-        //        return NotFound();
-        //    }
-        //}
+        [HttpPut("update/{Idexperience}")]
+        public IActionResult UpdateExperience([FromRoute] int Idexperience, [FromBody] ExperienceForCreationAndUpdateRequest Request)
+        {
+            var ExperienceToModify = _experienceRepository.GetOne(Idexperience);
+            if (ExperienceToModify != null)
+            {
+                // Actualizar las propiedades de la entidad existente
+                ExperienceToModify.Title = Request.Title;
+                ExperienceToModify.Descripcion = Request.Descripcion;
+                ExperienceToModify.ImgPath = Request.ImagePath;
 
-        /*[HttpDelete("{idExperience}")]
+                // Actualizar el repositorio
+                _experienceRepository.Modify(ExperienceToModify);
+                return NoContent();
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+
+        [HttpDelete("delete/{idExperience}")]
 
         public IActionResult DeleteExperience([FromRoute] int idExperience)
         {
-            int ExperienceToDelete = ExperienceRepository.Experiences.FindIndex(e => e.Id == idExperience);
-            ExperienceRepository.Experiences.RemoveAt(ExperienceToDelete);
+            _experienceRepository.Delete(idExperience);
             return Ok();
-        }*/
+        }
 
-        //[HttpDelete("{IdExperience}")]
+        [HttpPut("logic-delete/{Id}")]
 
-        //public IActionResult DeleteLogic([FromRoute] int IdExperience)
-        //{
-        //    int ExperienceToDelete = _experienceRepository.Experiences.FindIndex(e => e.Id == IdExperience);
-        //    if (ExperienceToDelete != 1)
-        //    {
-        //        Experience DeletedExperience = new Experience()
-        //        {
-        //            Id = IdExperience,
-        //            Title = _experienceRepository.Experiences[ExperienceToDelete].Title,
-        //            Descripcion = _experienceRepository.Experiences[ExperienceToDelete].Descripcion,
-        //            ImagePath = _experienceRepository.Experiences[ExperienceToDelete].ImagePath,
-        //            Summary = _experienceRepository.Experiences[ExperienceToDelete].Summary,
-        //            State = "Deleted"
-        //        };
-        //        _experienceRepository.Experiences[ExperienceToDelete] = DeletedExperience;
-        //        return NoContent();
-        //    }
-        //    return Ok();
-        //}
+        public IActionResult LogicaElimination([FromRoute] int Id)
+        {
+            //int ExperienceToDelete = _experienceRepository.Experiences.FindIndex(e => e.Id == Idexperience);
+            var ExperienceToDelete = _experienceRepository.GetOne(Id);
+            if (ExperienceToDelete != null)
+            {
+                ExperienceToDelete.State = "Deleted";
+                _experienceRepository.Modify(ExperienceToDelete);
+                return NoContent();
+            }
+            return NotFound(); // Devuelve 404 si no se encuentra la experiencia
+        }
     }
 }
