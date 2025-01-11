@@ -15,7 +15,8 @@ builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlite(
 builder.Configuration["ConnectionStrings:DBConnectionString"]));
 /*Se puede poner la ruta directamente*/
 /*Ciclo de vida del servicio*/
-builder.Services.AddTransient<ExperienceRepository>();
+builder.Services.AddSingleton<ExperienceRepository>();
+builder.Services.AddSingleton<UserRepository>();
 
 var app = builder.Build();
 
