@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\PortfolioAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{61931F0F-793C-4806-9EA4-495C963ECB8A}|PortfolioAPI\\PortfolioAPI.csproj|c:\\users\\usuario\\desktop\\portfolioapi\\portfolioapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61931F0F-793C-4806-9EA4-495C963ECB8A}|PortfolioAPI\\PortfolioAPI.csproj|solutionrelative:portfolioapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{61931F0F-793C-4806-9EA4-495C963ECB8A}|PortfolioAPI\\PortfolioAPI.csproj|c:\\users\\usuario\\desktop\\portfolioapi\\portfolioapi\\controllers\\experiencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{61931F0F-793C-4806-9EA4-495C963ECB8A}|PortfolioAPI\\PortfolioAPI.csproj|solutionrelative:portfolioapi\\controllers\\experiencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61931F0F-793C-4806-9EA4-495C963ECB8A}|PortfolioAPI\\PortfolioAPI.csproj|c:\\users\\usuario\\desktop\\portfolioapi\\portfolioapi\\data\\repositories\\experiencerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61931F0F-793C-4806-9EA4-495C963ECB8A}|PortfolioAPI\\PortfolioAPI.csproj|solutionrelative:portfolioapi\\data\\repositories\\experiencerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61931F0F-793C-4806-9EA4-495C963ECB8A}|PortfolioAPI\\PortfolioAPI.csproj|c:\\users\\usuario\\desktop\\portfolioapi\\portfolioapi\\models\\credentialsforauthenticatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61931F0F-793C-4806-9EA4-495C963ECB8A}|PortfolioAPI\\PortfolioAPI.csproj|solutionrelative:portfolioapi\\models\\credentialsforauthenticatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61931F0F-793C-4806-9EA4-495C963ECB8A}|PortfolioAPI\\PortfolioAPI.csproj|c:\\users\\usuario\\desktop\\portfolioapi\\portfolioapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61931F0F-793C-4806-9EA4-495C963ECB8A}|PortfolioAPI\\PortfolioAPI.csproj|solutionrelative:portfolioapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{61931F0F-793C-4806-9EA4-495C963ECB8A}|PortfolioAPI\\PortfolioAPI.csproj|c:\\users\\usuario\\desktop\\portfolioapi\\portfolioapi\\controllers\\authenticatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{61931F0F-793C-4806-9EA4-495C963ECB8A}|PortfolioAPI\\PortfolioAPI.csproj|c:\\users\\usuario\\desktop\\portfolioapi\\portfolioapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{61931F0F-793C-4806-9EA4-495C963ECB8A}|PortfolioAPI\\PortfolioAPI.csproj|solutionrelative:portfolioapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{61931F0F-793C-4806-9EA4-495C963ECB8A}|PortfolioAPI\\PortfolioAPI.csproj|c:\\users\\usuario\\desktop\\portfolioapi\\portfolioapi\\models\\credentialsforauthenticatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61931F0F-793C-4806-9EA4-495C963ECB8A}|PortfolioAPI\\PortfolioAPI.csproj|solutionrelative:portfolioapi\\models\\credentialsforauthenticatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{61931F0F-793C-4806-9EA4-495C963ECB8A}|PortfolioAPI\\PortfolioAPI.csproj|c:\\users\\usuario\\desktop\\portfolioapi\\portfolioapi\\data\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,10 +39,6 @@
       "RelativeMoniker": "D:0:0:{61931F0F-793C-4806-9EA4-495C963ECB8A}|PortfolioAPI\\PortfolioAPI.csproj|solutionrelative:portfolioapi\\data\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{61931F0F-793C-4806-9EA4-495C963ECB8A}|PortfolioAPI\\PortfolioAPI.csproj|c:\\users\\usuario\\desktop\\portfolioapi\\portfolioapi\\data\\repositories\\experiencerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61931F0F-793C-4806-9EA4-495C963ECB8A}|PortfolioAPI\\PortfolioAPI.csproj|solutionrelative:portfolioapi\\data\\repositories\\experiencerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{61931F0F-793C-4806-9EA4-495C963ECB8A}|PortfolioAPI\\PortfolioAPI.csproj|c:\\users\\usuario\\desktop\\portfolioapi\\portfolioapi\\entities\\experience.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{61931F0F-793C-4806-9EA4-495C963ECB8A}|PortfolioAPI\\PortfolioAPI.csproj|solutionrelative:portfolioapi\\entities\\experience.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -50,11 +50,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PortfolioAPI\\PortfolioAPI\\appsettings.json",
               "RelativeDocumentMoniker": "PortfolioAPI\\appsettings.json",
@@ -62,12 +62,11 @@
               "RelativeToolTip": "PortfolioAPI\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-14T00:35:45.879Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-14T00:35:45.879Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PortfolioAPI\\PortfolioAPI\\Data\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "PortfolioAPI\\Data\\Repositories\\UserRepository.cs",
@@ -75,12 +74,11 @@
               "RelativeToolTip": "PortfolioAPI\\Data\\Repositories\\UserRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T17:36:06.264Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-11T17:36:06.264Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "AuthenticateController.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PortfolioAPI\\PortfolioAPI\\Controllers\\AuthenticateController.cs",
               "RelativeDocumentMoniker": "PortfolioAPI\\Controllers\\AuthenticateController.cs",
@@ -88,25 +86,24 @@
               "RelativeToolTip": "PortfolioAPI\\Controllers\\AuthenticateController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T16:45:03.268Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-11T16:45:03.268Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PortfolioAPI\\PortfolioAPI\\Program.cs",
               "RelativeDocumentMoniker": "PortfolioAPI\\Program.cs",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\PortfolioAPI\\PortfolioAPI\\Program.cs",
               "RelativeToolTip": "PortfolioAPI\\Program.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAiwDgAAAAdAAAA",
+              "ViewState": "AQIAACsAAAAAAAAAAAAiwEkAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-03T14:52:03.959Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PortfolioAPI\\PortfolioAPI\\Entities\\User.cs",
               "RelativeDocumentMoniker": "PortfolioAPI\\Entities\\User.cs",
@@ -114,12 +111,11 @@
               "RelativeToolTip": "PortfolioAPI\\Entities\\User.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T16:58:23.262Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-11T16:58:23.262Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "CredentialsForAuthenticateDTO.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PortfolioAPI\\PortfolioAPI\\Models\\CredentialsForAuthenticateDTO.cs",
               "RelativeDocumentMoniker": "PortfolioAPI\\Models\\CredentialsForAuthenticateDTO.cs",
@@ -132,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "ExperienceRepository.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PortfolioAPI\\PortfolioAPI\\Data\\Repositories\\ExperienceRepository.cs",
               "RelativeDocumentMoniker": "PortfolioAPI\\Data\\Repositories\\ExperienceRepository.cs",
@@ -145,20 +141,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ExperienceController.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PortfolioAPI\\PortfolioAPI\\Controllers\\ExperienceController.cs",
               "RelativeDocumentMoniker": "PortfolioAPI\\Controllers\\ExperienceController.cs",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\PortfolioAPI\\PortfolioAPI\\Controllers\\ExperienceController.cs",
               "RelativeToolTip": "PortfolioAPI\\Controllers\\ExperienceController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAOAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-27T16:53:20.332Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ApplicationContext.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PortfolioAPI\\PortfolioAPI\\Data\\ApplicationContext.cs",
               "RelativeDocumentMoniker": "PortfolioAPI\\Data\\ApplicationContext.cs",
@@ -166,8 +162,7 @@
               "RelativeToolTip": "PortfolioAPI\\Data\\ApplicationContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T14:24:37.04Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T14:24:37.04Z"
             },
             {
               "$type": "Document",
@@ -179,8 +174,7 @@
               "RelativeToolTip": "PortfolioAPI\\Entities\\Experience.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T17:26:14.713Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-27T17:26:14.713Z"
             }
           ]
         }
