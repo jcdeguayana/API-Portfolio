@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Mvc;
 using PortfolioAPI.Data.Repositories;
@@ -10,6 +11,7 @@ namespace PortfolioAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ExperienceController : ControllerBase
     {
         /*1- Propiedad privada y de solo lectura del tipo de la clase que quiero inyectar*/
