@@ -56,7 +56,23 @@ builder.Configuration["ConnectionStrings:DBConnectionString"]));
 builder.Services.AddTransient<ExperienceRepository>();
 builder.Services.AddTransient<UserRepository>();
 
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:5173") // Agrega la URL de tu frontend
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        });
+});
+
 var app = builder.Build();
+
+// Usa la política de CORS
+app.UseCors(MyAllowSpecificOrigins);
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
