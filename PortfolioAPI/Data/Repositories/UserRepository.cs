@@ -1,4 +1,6 @@
 ﻿using PortfolioAPI.Entities;
+using PortfolioAPI.Models;
+using System.Net;
 
 namespace PortfolioAPI.Data.Repositories
 {
@@ -15,5 +17,14 @@ namespace PortfolioAPI.Data.Repositories
             User? UserToAuthenticate = _context.Users.FirstOrDefault(a=>a.UserName == User && a.Password==Password);
             return UserToAuthenticate;
         }
+
+        public void AddUser(User User)
+        {
+            _context.Users.Add(User);
+            _context.SaveChanges();
+
+        }
+
+
     }
 }

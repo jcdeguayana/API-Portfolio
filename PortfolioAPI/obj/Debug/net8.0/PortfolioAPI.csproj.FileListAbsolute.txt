@@ -197,3 +197,7 @@ C:\Users\Usuario\Desktop\PortfolioAPI\PortfolioAPI\bin\Debug\net8.0\Microsoft.Id
 C:\Users\Usuario\Desktop\PortfolioAPI\PortfolioAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Usuario\Desktop\PortfolioAPI\PortfolioAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Usuario\Desktop\PortfolioAPI\PortfolioAPI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Usuario\Desktop\PortfolioAPI\PortfolioAPI\bin\Debug\net8.0\PortfolioAPI.staticwebassets.endpoints.json
+C:\Users\Usuario\Desktop\PortfolioAPI\PortfolioAPI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Usuario\Desktop\PortfolioAPI\PortfolioAPI\obj\Debug\net8.0\staticwebassets\msbuild.PortfolioAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Usuario\Desktop\PortfolioAPI\PortfolioAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

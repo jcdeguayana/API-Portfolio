@@ -1,0 +1,135 @@
+[
+  {
+    "ContainingType": "PortfolioAPI.Controllers.AuthenticateController",
+    "Method": "AddUser",
+    "RelativePath": "api/Authenticate/AddUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "credentials",
+        "Type": "PortfolioAPI.Entities.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PortfolioAPI.Controllers.AuthenticateController",
+    "Method": "Authenticate",
+    "RelativePath": "api/Authenticate/AuthUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "credentials",
+        "Type": "PortfolioAPI.Models.CredentialsForAuthenticateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PortfolioAPI.Controllers.ExperienceController",
+    "Method": "Get",
+    "RelativePath": "api/Experience",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IncludeDeleted",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PortfolioAPI.Controllers.ExperienceController",
+    "Method": "AddExperience",
+    "RelativePath": "api/Experience",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "RequestDto",
+        "Type": "PortfolioAPI.Models.ExperienceForCreationAndUpdateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PortfolioAPI.Controllers.ExperienceController",
+    "Method": "GetOne",
+    "RelativePath": "api/Experience/{title}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "title",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PortfolioAPI.Controllers.ExperienceController",
+    "Method": "DeleteExperience",
+    "RelativePath": "api/Experience/delete/{idExperience}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idExperience",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PortfolioAPI.Controllers.ExperienceController",
+    "Method": "LogicaElimination",
+    "RelativePath": "api/Experience/logic-delete/{Id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PortfolioAPI.Controllers.ExperienceController",
+    "Method": "UpdateExperience",
+    "RelativePath": "api/Experience/update/{Idexperience}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Idexperience",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Request",
+        "Type": "PortfolioAPI.Models.ExperienceForCreationAndUpdateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

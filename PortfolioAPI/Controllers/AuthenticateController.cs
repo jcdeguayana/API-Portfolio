@@ -20,9 +20,17 @@ namespace PortfolioAPI.Controllers
         {
             _userRepository = userRepository;
             _config = configuration;
-        } 
+        }
+
+        [HttpPost("AddUser")]
+
+        public IActionResult AddUser([FromBody] User credentials)
+        {
+            _userRepository.AddUser(credentials);
+            return Ok();
+        }
  
-        [HttpPost]
+        [HttpPost("AuthUser")]
         public IActionResult Authenticate([FromBody] CredentialsForAuthenticateDTO credentials)
         {
             User? userAuthenticated = _userRepository.Authenticate(credentials.User, credentials.Password);
